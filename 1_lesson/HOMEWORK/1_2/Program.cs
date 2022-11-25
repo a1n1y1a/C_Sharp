@@ -5,11 +5,13 @@
 Console.WriteLine("Введите число:");
 int num=int.Parse(Console.ReadLine());
 
-if (num/2)
+double num_2 = num % 2;
+if (num_2==0) 
 {
-    Console.WriteLine("Четное");
+    Console.WriteLine("число четное");
 }
-else 
+
+else
 {
-    Console.WriteLine("Нечетное");
+    Console.WriteLine("Число нечетное");
 }
