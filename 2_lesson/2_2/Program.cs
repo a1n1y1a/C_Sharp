@@ -6,7 +6,9 @@ string crat(int num, int num_2)
     if(num % num_2 == 0)
         return "кратно";
 
-    else 
+    while (num >999) num/=10;
+    Console.WriteLine (num % 10) 
+
         return $"некратно, остаток= {num % num_2}";
 }
 
