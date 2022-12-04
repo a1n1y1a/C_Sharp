@@ -4,13 +4,13 @@ void TN(int num)
 
 {
     Console.Write($"{num}->");
-    if (num<99)
+    if (num < 99)
     {
         Console.WriteLine("Число не имеет третьей цифры. Введите другое число.");
-        return;
+        return;//обрывает то,что выше 
     }
-    while (num>999) num/=10;
-    Console.WriteLine(num%10);
+    while (num > 999) num /= 10;// все время режем число,доходим до состояния трех цифр и выходим
+    Console.WriteLine(num % 10);
 }
-Console.WriteLine ("Введите число");
+Console.WriteLine("Введите число");
 TN(int.Parse(Console.ReadLine()));
