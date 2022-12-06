@@ -3,7 +3,7 @@ string Palindrom(int num)
 {
     Console.Write($"{num}->");
 
-    while (num > 9999 || num < 100000)
+    if (num > 9999 && num < 100000)
     {
         if (num / 10000 % 10 == num % 10 && num / 1000 % 10 == num / 10 % 10)
 
