@@ -3,14 +3,13 @@
 
 void Massiv(int n)
 {
-int[] array = new int[n];
-for (int i = 0; i < n; i++)
-{
-array[i] = new Random().Next(2);
-Console.Write($"{array[i]}, ");
-}
+    int[] array = new int[n];
+    for (int i = 0; i < n; i++)
+    {
+        array[i] = new Random().Next(2);
+        Console.Write($"{array[i]}, ");
+    }
 }
 
 Console.WriteLine("Введите число:");
 Massiv(int.Parse(Console.ReadLine()));
-// ТК у нас в теле есть write то в конце мы не пишем write
