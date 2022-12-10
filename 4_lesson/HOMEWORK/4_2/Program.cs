@@ -15,3 +15,23 @@ int SumNum(int n)
 
 }
 Console.WriteLine((SumNum(int.Parse(Console.ReadLine()))));
+
+
+// double DigitSum(int num)
+//{
+//    string n=num ToString();
+//  int length=n.Length;
+//  double sum=0;
+//
+//  for (int i=0; i<length ;i++)
+//  {
+//      double m=char.GetNumericValue(n[i]);
+//      sum+=m;
+//  }
+
+//  return sum;
+//}
+//Console.WriteLine(DigitSum(int.Parse(Console.ReadLine())));
+
+
+
