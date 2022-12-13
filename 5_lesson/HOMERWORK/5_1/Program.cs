@@ -20,11 +20,11 @@ int[] Mass(int size)
     return arr;
 }
 
-int SumChet(int[]array)
+int SumChet(int[] array)
 {
-     int summa = 0;
+    int summa = 0;
     for (int i = 0; i < array.Length; i++)
-   
+
     {
         if (array[i] % 2 == 0)
             summa = summa + 1;

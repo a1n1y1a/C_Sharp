@@ -20,7 +20,7 @@ int[] Mass(int size)
     int[] arr = new int[size];
 
     for (int i = 0; i < size; i++)
-        arr[i] = new Random().Next(10,100);
+        arr[i] = new Random().Next(10, 100);
     return arr;
 }
 

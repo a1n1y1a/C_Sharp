@@ -36,7 +36,7 @@ void Raznica(double[] array)
 
     }
     Console.Write($"Максимальное:{max}, Минимальное:{min}. ");
-    Console.Write($"Разница : {max}-{min}={Math.Round(max-min,1)}");
+    Console.Write($"Разница : {max}-{min}={Math.Round(max - min, 1)}");
 }
 double[] arr_1 = Mass(int.Parse(Console.ReadLine()),
                       int.Parse(Console.ReadLine()),
