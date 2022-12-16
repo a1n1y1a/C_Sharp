@@ -21,4 +21,7 @@ int[,] Print(int raw, int stolb)
         for (int j = 0; j < stolb; j++)
             arr[i, j] = new Random().Next(100, 1000);
     return arr;
+
 }
+
+//https://studok.net/obrazovanie-i-kommunikacii/vopros-kak-vychislit-tochku-peresechenija-dvuh-prjamyh/
