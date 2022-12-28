@@ -36,13 +36,13 @@ void PoUbivaniu(int[,] arr)
         for (int j = 0; j < column; i++)
         {
             for (int a = 0; a < column - j - 1; a++)
-                if (arr[i, a]<arr[i, a + 1])
-        (arr[i, a], arr[i, a + 1]) = (arr[i, a + 1], arr[i, a]);
-        
+                if (arr[i, a] < arr[i, a + 1])
+                    (arr[i, a], arr[i, a + 1]) = (arr[i, a + 1], arr[i, a]);
+
         }
     }
 }
- Console.Write("Enter the number of rows: ");
+Console.Write("Enter the number of rows: ");
 int row = int.Parse(Console.ReadLine());
 Console.Write("Enter the number of columns: ");
 int column = int.Parse(Console.ReadLine());

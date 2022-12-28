@@ -26,25 +26,27 @@ int[,] MassNums(int row, int column, int from, int to)
     return arr;
 }
 
-void StrokaNaimSum (int[,]arr)
-{int row = arr.GetLength(0);
-    int column = arr.GetLength(1);
-    int num=0;
-    int min=0;
-    int a=1000;
-for (int i = 0; i < row; i++)
-{num=0;
-for (int j = 0; j < column; j++)
-num+=arr[i,j];
-Console.Write($"{num,4} ");
-if (a>num)
+void StrokaNaimSum(int[,] arr)
 {
-    a=num;
-    min=i;
-}
-}
-Console.WriteLine();
-Console.Write($"Искомая строка - {min+1}");
+    int row = arr.GetLength(0);
+    int column = arr.GetLength(1);
+    int num = 0;
+    int min = 0;
+    int a = 1000;
+    for (int i = 0; i < row; i++)
+    {
+        num = 0;
+        for (int j = 0; j < column; j++)
+            num += arr[i, j];
+        Console.Write($"{num,4} ");
+        if (a > num)
+        {
+            a = num;
+            min = i;
+        }
+    }
+    Console.WriteLine();
+    Console.Write($"Искомая строка - {min + 1}");
 }
 
 Console.Write("Enter the number of rows: ");
