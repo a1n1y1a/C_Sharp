@@ -38,7 +38,8 @@ void PoUbivaniu(int[,] arr)
             for (int a = 0; a < column - j - 1; a++)
                 if (arr[i, a]<arr[i, a + 1])
         (arr[i, a], arr[i, a + 1]) = (arr[i, a + 1], arr[i, a]);
-    }
+        
+        }
     }
 }
  Console.Write("Enter the number of rows: ");
@@ -50,4 +51,4 @@ int[,] arr_1 = MassNums(row, column,
                         int.Parse(Console.ReadLine()),
                         int.Parse(Console.ReadLine()));
 Print(arr_1);
-Console.WriteLine(PoUbivaniu(arr_1));
+PoUbivaniu(arr_1);
